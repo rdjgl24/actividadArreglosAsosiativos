@@ -3,9 +3,9 @@ $trabajador1 = array();
 $trabajador2 = array();
 $trabajador3 = array();
 
-$claves = array('nombre', 'apellido', 'cedula', 'sueldo', 'departamento', 'lugar');
+$caracteristicas = array('nombre', 'apellido', 'cedula', 'sueldo', 'departamento', 'lugar');
 
-foreach($claves as $key => $valor){
+foreach($caracteristicas as $key => $valor){
   $trabajador1[$valor] = $_POST[$valor . "1"];
   $trabajador2[$valor] = $_POST[$valor . "2"];
   $trabajador3[$valor] = $_POST[$valor . "3"];
@@ -25,8 +25,8 @@ foreach($claves as $key => $valor){
 <td>
   <h3>trabajador 1</h3>
   <?php
-  foreach($trabajador1 as $clave => $valor){
-    echo $clave . " es " . $valor;
+  foreach($trabajador1 as $caracteristicas => $valor){
+    echo $caracteristicas . " es " . $valor;
     echo "<br>";
   }
   ?>
@@ -34,8 +34,8 @@ foreach($claves as $key => $valor){
 <td>
   <h3>trabajador 2</h3>
   <?php
-  foreach($trabajador2 as $clave => $valor){
-    echo $clave . " es " . $valor;
+  foreach($trabajador2 as $caracteristicas => $valor){
+    echo $caracteristicas . " es " . $valor;
     echo "<br>";
   }
   ?>
@@ -43,8 +43,8 @@ foreach($claves as $key => $valor){
 <td>
   <h3>trabajador 3</h3>
   <?php
-  foreach($trabajador3 as $clave => $valor){
-    echo $clave . " es " . $valor;
+  foreach($trabajador3 as $caracteristicas => $valor){
+    echo $caracteristicas . " es " . $valor;
     echo "<br>";
   }
     ?>
